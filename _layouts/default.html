@@ -1,13 +1,22 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>{{ page.title }}</title>
+    <style>
+        body {
+            /*RESET*/
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
-<body>
-    <h1>WELCOME TO MY PORTFOLIO</h1>
-    <p>This is the alpha</p>
 
+<body>
+    {% include nav.html %}
+    {{ content }}
 </body>
+
 </html>
